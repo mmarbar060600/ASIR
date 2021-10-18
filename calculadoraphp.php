@@ -2,32 +2,32 @@
 function sumar($operando1, $operando2)
 {
     $resul = $operando1 + $operando2;
-    print "el resultado es" . $resul;
+    print "el resultado es " . $resul;
 }
 function multi($operando1, $operando2)
 {
     $resul = $operando1 * $operando2;
-    print "el resultado es" . $resul;
+    print "el resultado es " . $resul;
 }
 function restar($operando1, $operando2)
 {
     $resul = $operando1 - $operando2;
-    print "el resultado es" . $resul;
+    print "el resultado es " . $resul;
 }
 function divi($operando1, $operando2)
 {
     $resul = $operando1 / $operando2;
-    print "el resultado es" . $resul;
+    print "el resultado es " . $resul;
 }
 function resto($operando1, $operando2)
 {
     $resul = $operando1 % $operando2;
-    print "el resultado es" . $resul;
+    print "el resultado es " . $resul;
 }
 function raiz($operando1)
 {
     $resul = sqrt($operando1);
-    print "el resultado es" . $resul;
+    print "el resultado es " . $resul;
 }
 function elevar($operando1, $operando2)
 {
