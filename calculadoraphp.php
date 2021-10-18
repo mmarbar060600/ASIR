@@ -32,7 +32,7 @@ function raiz($operando1)
 function elevar($operando1, $operando2)
 {
     $resul = pow($operando1, $operando2);
-    print "el resultado es" . $resul;
+    print "el resultado es " . $resul;
 }
 	$operando1 = $_GET['operando1'];
 	$operando2 = $_GET['operando2'];
