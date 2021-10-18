@@ -34,9 +34,9 @@ function elevar($operando1, $operando2)
     $resul = pow($operando1, $operando2);
     print "el resultado es " . $resul;
 }
-	$operando1 = $_GET['operando1'];
-	$operando2 = $_GET['operando2'];
-	$operador = $_GET['operador'];
+	$operando1 = $_GET["operando1"];
+	$operando2 = $_GET["operando2"];
+	$operador = $_GET["operador"];
 	
 	if($operador == "+"){
 		sumar($operando1, $operando2);
