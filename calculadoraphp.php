@@ -1,4 +1,6 @@
 <?php
+
+/*Creamos todas las funciones*/
 function sumar($operando1, $operando2)
 {
     $resul = $operando1 + $operando2;
