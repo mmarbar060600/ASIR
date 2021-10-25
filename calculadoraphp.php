@@ -34,6 +34,19 @@ function elevar($operando1, $operando2)
     $resul = pow($operando1, $operando2);
     print "el resultado es " . $resul;
 }
+function fibo($a)
+{
+    $nume1 = 0;
+    $nume2 = 1;
+    $contador = 0;
+    while ($contador <= $a) {
+        print "".$nume1;
+        $nume3 = $nume2 + $nume1;
+        $nume1 = $nume2;
+        $nume2 = $nume3;
+        $contador ++;
+    };
+    }
 	$operando1 = $_POST["operando1"];
 	$operando2 = $_POST["operando2"];
 	$operador = $_POST["operador"];
@@ -78,6 +91,9 @@ function elevar($operando1, $operando2)
             break;
         case '^':
             elevar($operando1, $operando2);
+            break;
+        case 'fibo':
+            fibo($operando1);
             break;
         
         default:
