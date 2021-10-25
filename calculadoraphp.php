@@ -38,7 +38,9 @@ function elevar($operando1, $operando2)
 	$operando2 = $_POST["operando2"];
 	$operador = $_POST["operador"];
 	
-	if($operador == "+"){
+    /*Ejemplo con if*/
+
+	/*if($operador == "+"){
 		sumar($operando1, $operando2);
 	}else if($operador == "*"){
 		multi($operando1, $operando2);
@@ -52,5 +54,34 @@ function elevar($operando1, $operando2)
         raiz($operando1);
     }else if ($operador == "^"){
         elevar($operando1, $operando2);
-    } 
+    } */
+
+    /*ejemplo con switch*/
+    switch ($operador) {
+        case '+':
+            sumar($operando1, $operando2);
+            break;
+        case '*':
+            multi($operando1, $operando2);
+            break;
+        case '-':
+            restar($operando1, $operando2);
+            break;
+        case '/':
+            divi($operando1, $operando2);
+            break;
+        case '%':
+            resto($operando1, $operando2);
+            break;
+        case '√':
+            raiz($operando1);
+            break;
+        case '^':
+            elevar($operando1, $operando2);
+            break;
+        
+        default:
+            echo "Operacion incorrecta";
+            break;
+    }
 ?>
