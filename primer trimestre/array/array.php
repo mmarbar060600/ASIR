@@ -1,4 +1,6 @@
 <?php
+
+#ARRAY NORMALES
     $numeros = array(8, 3, 7, 1);
 
     $suspenso = array("Miguel","Kerry");
@@ -26,10 +28,18 @@ while ($parada <= 5) {
 
 $cochesordenados=sort($coches);
 
-echo "este es el orden: ". $cochesordenados;
+echo "este es el orden: ". $cochesordenados."<br>";
 
 while ($parada < $cuentacoches-1) {
     echo $coches[$cochesordenados]. "<br>";
     $parada++;
 }
+#ARRAY ASOCIATIVOS
+
+$alumnos = array("Nombre" => "Miguel",
+                                    "apellidos" => "Kerry",
+                                    "Edad" =>23,
+                                    "estaaprobado"=>false);
+echo "el alumno es". $alumnos["Edad"].$alumnos["apellidos"].$alumnos["Nombre"];
+
 ?>
