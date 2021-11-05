@@ -23,4 +23,13 @@ while ($parada <= 5) {
     echo $coches[$aleatorio]. "<br>";
     $parada++;
 }
+
+$cochesordenados=sort($coches);
+
+echo "este es el orden: ". $cochesordenados;
+
+while ($parada < $cuentacoches-1) {
+    echo $coches[$cochesordenados]. "<br>";
+    $parada++;
+}
 ?>
