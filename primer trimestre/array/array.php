@@ -101,8 +101,9 @@ echo"<br>";
 
 $cuentaletras=strlen($capitales["Andalucia"]);
 echo $cuentaletras;
-
+echo "<br>";
 $notasasignaturasMiguel=["LMI"=>0,"FOL"=>10,"PAR"=>9,"ISO"=>0,"FH"=>0,"BD"=>4];
+print_r($notasasignaturasMiguel);
 /*for ($i=0; $i < ; $i++) { 
     # code...
 }
