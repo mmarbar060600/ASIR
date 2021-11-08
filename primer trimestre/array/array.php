@@ -104,6 +104,42 @@ echo $cuentaletras;
 echo "<br>";
 $notasasignaturasMiguel=["LMI"=>0,"FOL"=>10,"PAR"=>9,"ISO"=>0,"FH"=>0,"BD"=>4];
 print_r($notasasignaturasMiguel);
+
+$coches1=array("Seat","Renault","Dacia");
+$coches2= ["BMW","Audi"];
+print_r($coches1);
+echo "<br>";
+print_r($coches2);
+echo "<br>";
+echo "<br>UNION DE ARRAYS<br>";
+
+$union2con1=$coches2+$coches1;
+print_r($union2con1);
+echo "<br>";
+
+#Borrar elemento
+print "<br><b>Borrar elementos</b>"."<br>";
+$coches3=array("Seat","Renault","Dacia","BMW","Audi");
+print_r($coches3);
+echo "<br>";
+unset($coches3[1]);
+
+print_r($coches3);
+echo "<br>";
+$cuentacoches=count($coches3);
+echo $cuentacoches;
+
+print $coches3[6]="ferrari";
+print_r($coches3);
+echo "<br>";
+
+#copiar matrices
+print "<br><b>Copiar matrices</b>"."<br>";
+$copiacapitales=$capitales;
+
+print_r($copiacapitales);
+echo "<br>";
+
 /*for ($i=0; $i < ; $i++) { 
     # code...
 }
