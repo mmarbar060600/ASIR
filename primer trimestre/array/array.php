@@ -146,4 +146,29 @@ echo "<br>";
 #Forma2
 $numeros1 = [1,3,5,7,9];
 print_r($numeros1);*/
+
+//Clase 12 de noviembre
+echo "<br>";
+$colores2=["Verde","Azul","Amarillo","Rojo","Blanco"];
+$colores1=["Verde","Azul","Amarillo","Rojo"];
+//Coge solo el distinto de colores 2
+$resultadodiferencia = array_diff($colores2,$colores1);
+//Junta los dos
+$resultadounion=array_merge($colores2,$colores1);
+//Coge solo los colores comunes
+$resultadointerseccion= array_intersect($colores2,$colores1);
+//Ordenar un array Sin terminar
+$ordenararrayalfabeticamente = sort($colores2);
+//Añadir datos al array
+array_push($colores2,"Purpura","Celeste","Violeta");
+//Comandos Mostrar
+print_r($resultadodiferencia);
+echo "<br>";
+print_r($resultadounion);
+echo "<br>";
+print_r($resultadointerseccion);
+echo "<br>";
+print_r($ordenararrayalfabeticamente);
+echo "<br>";
+print_r($colores2);
 ?>
