@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de vuelos Manuel Martínez 2ºASIR</title>
+</head>
+<body>
+<form method="post" action="Gestión-de-vuelos.php">
+<legend style="border-style: solid black 1px;">Vuelo 1</legend>
+        <label for="c1">Código:</label>
+	    <input type="text"  name="infovuelo1[c1]"/><br>
+        <label for="co1">ciudad Origen:</label>
+		<input type="text"  name="infovuelo1[co1]"/><br>
+        <label for="cd1">ciudad Destino:</label>
+        <input type="text"  name="infovuelo1[cd1]"/><br>
+        <label for="p1">Precio:</label>
+        <input type="text"  name="infovuelo1[p1]"/><br>
+        <label for="f1">fecha</label>
+       <input type="date" name="infovuelo1[f1]"/><br>
+</fieldset>
+<fieldset>
+    <legend style="border-style: solid black 1px;">Vuelo 2</legend>
+            <label for="c2">Código:</label>
+            <input type="text" name="infovuelo2[c2]"/><br>
+            <label for="co2">Ciudad Origen:</label>
+            <input type="text"  name="infovuelo2[co2]"/><br>
+            <label for="cd2">ciudad Destino:</label>
+            <input type="text" name="infovuelo2[cd2]"/><br>
+            <label for="p2">Precio:</label>
+            <input type="text" name="infovuelo2[p2]"/><br>
+            <label for="f2">fecha</label>
+            <input type="date"  name="infovuelo2[f2]"/><br>
+</fieldset>
+    <fieldset>
+        <legend style="border-style: solid black 1px;">Herramientas</legend>
+                <select name="operador">
+                    <option value="1"> Une vuelos
+                    </option>
+                    <option value="2"> Diferencia entre vuelos
+                    </option>
+                    <option value="3"> Ordena vuelos
+                    </option>
+                    <option value="4"> Información común
+                    </option>
+                </select>
+            </fieldset>
+            <input type="submit" value="Enviar"/>
+            <input type="reset" value="Reset"/>
+            </form>
+</body>
+</html>
