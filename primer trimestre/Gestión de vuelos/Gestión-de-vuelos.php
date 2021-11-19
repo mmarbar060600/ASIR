@@ -22,21 +22,25 @@ if (isset($_POST["infovuelo1"]) && isset($_POST["infovuelo2"])) {
     function unir($vuelo1,$vuelo2)
     {
         $unirarray = array_merge($vuelo1,$vuelo2);
+        echo "vuelos unidos: ";
         print_r($unirarray);
     }
     function dife($vuelo1,$vuelo2)
     {
         $difearray = array_diff($vuelo1,$vuelo2);
+        echo "Diferencia de vuelos: ";
         print_r($difearray);
     }
     function orde($vuelo1)
     {
         sort($vuelo1);
+        echo "Vuelo 1 ordenado: ";
         print_r($vuelo1);
     }
     function infcomu($vuelo1,$vuelo2)
     {
         $infcomuarray = array_intersect($vuelo1,$vuelo2);
+        echo "Info comun: ";
         print_r($infcomuarray);
     }
 switch ($operador) {
