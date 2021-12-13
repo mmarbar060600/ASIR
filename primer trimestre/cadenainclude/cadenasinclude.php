@@ -1,4 +1,9 @@
 <?php
+include 'Cadenas.php';
+$t1 = $_POST["texto1"];
+$t2 = $_POST["texto2"];
+$t3 = $_POST["texto3"];
+$operador = $_POST["operador"];
 switch ($operador) {
     case '1':
         caracter($t1);
