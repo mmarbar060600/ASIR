@@ -2,8 +2,9 @@
 
 #constantes(Algo que no cambio o varia en el tiempo)
 $pi=pi();
-echo "numero pi: ". $pi;
+echo "numero pi: ". $pi."<br>";
 define('GRAVEDAD',9.8);
+echo "Constante de la gravedad: ".GRAVEDAD;
 /*
 $manule="cafelaso de arvellana";
 
