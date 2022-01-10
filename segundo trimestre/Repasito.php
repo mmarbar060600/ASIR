@@ -1,4 +1,10 @@
 <?php
+
+#constantes(Algo que no cambio o varia en el tiempo)
+$pi=pi();
+echo "numero pi: ". $pi;
+define('GRAVEDAD',9.8);
+/*
 $manule="cafelaso de arvellana";
 
 $migue=0;
@@ -27,4 +33,6 @@ while ($a <= 10) {
 for ($i=0; $i < ; $i++) { 
     # code...
 }
+
+*/
 ?>
