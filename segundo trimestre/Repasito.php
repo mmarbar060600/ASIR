@@ -1,5 +1,12 @@
 <?php
-
+include_once 'constantes.php';
+resta();
+resta();
+resta();
+resta();
+resta();
+resta();
+resta();
 #constantes(Algo que no cambio o varia en el tiempo)
 echo "<br>";
 echo "crear constantes";
@@ -123,7 +130,8 @@ echo "<br>";
 echo "Redondeado";
 echo "<br>";
 $redon=round(GRAVEDAD);
-echo $redon
+echo $redon;
+
 /*
 $manule="cafelaso de arvellana";
 
@@ -155,4 +163,7 @@ for ($i=0; $i < ; $i++) {
 }
 
 */
+echo "<br>";
+echo "<br>";
+echo PACO;
 ?>
