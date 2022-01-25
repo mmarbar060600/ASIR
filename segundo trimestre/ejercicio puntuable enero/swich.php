@@ -11,6 +11,12 @@ switch ($entrada) {
         case 'm2':
             vuelosdestis($vuelodesti,$operando1);
             break;
+        case 'm3':
+            fabricante($avifabri,$operando1);
+            break;
+        case 'm4':
+            sumatotal($vuedura,$operando1);
+            break;
     default:
         echo "Prueba ejc1";
         break;

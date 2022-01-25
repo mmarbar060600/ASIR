@@ -26,18 +26,18 @@ include_once 'Funciones.php';
         
     );
     $vuedura= array(
-        array("vuelo"=>"Vueling-AE12","Duración viaje"=>"120 minutos"),
-        array("vuelo"=>"Volotea-EA21","Duración viaje"=>"100 minutos"),
-        array("vuelo"=>"Iberia-WE44","Duración viaje"=>"340 minutos"),
-        array("vuelo"=>"Ryanair-EW44","Duración viaje"=>"45 minutos"),
-        array("vuelo"=>"Vueling-ZK87","Duración viaje"=>"600 minutos"),
-        array("vuelo"=>"Volotea-UA21","Duración viaje"=>"65 minutos"),
-        array("vuelo"=>"Iberia-WH44","Duración viaje"=>"90 minutos"),
-        array("vuelo"=>"Ryanair-EL00","Duración viaje"=>"50 minutos"),
-        array("vuelo"=>"Vueling-AE12","Duración viaje"=>"115 minutos"),
-        array("vuelo"=>"Volotea-EA21","Duración viaje"=>"100 minutos"),
-        array("vuelo"=>"Iberia-WE44","Duración viaje"=>"85 minutos"),
-        array("vuelo"=>"Ryanair-EW44","Duración viaje"=>"360 minutos")
+        array("vuelo"=>"Vueling-AE12","Duración-viaje"=>"120"),
+        array("vuelo"=>"Volotea-EA21","Duración-viaje"=>"100"),
+        array("vuelo"=>"Iberia-WE44","Duración-viaje"=>"340"),
+        array("vuelo"=>"Ryanair-EW44","Duración-viaje"=>"45"),
+        array("vuelo"=>"Vueling-ZK87","Duración-viaje"=>"600"),
+        array("vuelo"=>"Volotea-UA21","Duración-viaje"=>"65"),
+        array("vuelo"=>"Iberia-WH44","Duración-viaje"=>"90"),
+        array("vuelo"=>"Ryanair-EL00","Duración-viaje"=>"50"),
+        array("vuelo"=>"Vueling-AE12","Duración-viaje"=>"115"),
+        array("vuelo"=>"Volotea-EA21","Duración-viaje"=>"100"),
+        array("vuelo"=>"Iberia-WE44","Duración-viaje"=>"85"),
+        array("vuelo"=>"Ryanair-EW44","Duración-viaje"=>"360")
 
     );
     $vuelopasa= array(

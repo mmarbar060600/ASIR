@@ -46,5 +46,28 @@ foreach($vuelodesti as $key => $valor){
     echo "Ultimos destinos: ". $destino."<br>";
     }
     }
-};
+}
+function fabricante($avifabri,$operando1)
+{
+    foreach($avifabri as $key => $valor){
+        $vuelos=$valor['vuelo'];
+        $fabricante=$valor['Fabricante'];
+        if ($vuelos == $operando1){
+        echo "Fabricante del vuelo: ". $fabricante."<br>";
+        }
+        }
+}
+function sumatotal($vuedura,$operando1)
+{
+$contador=0;
+    foreach($vuedura as $key => $valor){
+        $vuelos=$valor['vuelo'];
+        $duracion=$valor['Duración-viaje'];
+        if ($vuelos == $operando1){
+            $contador=$duracion+$contador;
+        
+        }
+        }
+        echo "Minutos totales del vuelo: ". $contador."<br>";
+}
 ?>
