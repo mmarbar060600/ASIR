@@ -7,6 +7,69 @@
     <title>Ejercicio puntuable enero</title>
 </head>
 <body>
-    
+    <form method="post" action="swich.php" target="_blank">
+        <p>Mostrar vuelo</p>
+        <input type="text" name="operando1" placeholder="Compañia-xxx">
+		<select name="mvuelo">
+			<option value="m1">Media pasajeros
+			</option>
+			<option value="m2">Ultimos destinos
+			</option>
+			<option value="m3">Fabricante
+			</option>
+			<option value="m4">Minutos totales de vuelo
+			</option>
+			</option>
+		</select>
+		<input type="submit" value="enviar">
+		<input type="reset" value="borrar">
+	</form>
+    <form method="post" action="datosvuelos.php" target="_blank">
+        <p>Estadisticas aeropuerto</p>
+		<select name="mvuelo">
+			<option value="e1">Media de horas voladas de todos los vuelos:
+			</option>
+			<option value="e2">Número total de pasajeros de todos los vuelos:
+			</option>
+			<option value="e3">Numero de aviones por fabricante:
+			</option>
+			<option value="e4">Destino con más conexiones:
+			</option>
+            <option value="e5">Destino con menos conexiones:
+			</option>
+		</select>
+		<input type="submit" value="enviar">
+		<input type="reset" value="borrar">
+	</form>
+    <form method="post" action="datosvuelos.php" target="_blank">
+        <p>Estadisticas de ciudades</p>
+		<select name="mvuelo">
+			<option value="c1">Numero total de ciudades visitadas:
+			</option>
+			<option value="c2">veces que se ha ido a una ciudad:
+			</option>
+			<option value="c3">Cual es la ciudad mas visitada:
+			</option>
+			<option value="c4">Cuales son las ciudades menos visitadas:
+			</option>
+		</select>
+		<input type="submit" value="enviar">
+		<input type="reset" value="borrar">
+	</form>
+    <form method="post" action="datosvuelos.php" target="_blank">
+        <p>Estadisticas del avion</p>
+		<select name="mvuelo">
+			<option value="es1">Destinos del avión:
+			</option>
+			<option value="es2">Fabricante del avion:
+			</option>
+			<option value="es3">Media de horas volados:
+			</option>
+			<option value="es4">Pasajeros totales:
+			</option>
+		</select>
+		<input type="submit" value="enviar">
+		<input type="reset" value="borrar">
+	</form>
 </body>
 </html>
