@@ -128,9 +128,15 @@ $destinomax= array(
     array("Destino" => "Lima","conexiones" => $Lima),
     array("Destino" => "Bilbao","conexiones" => $Bilbao)
 );
+//calcular el maximo
 rsort($destinomax);
 $ciudadmaximo=(array_column($destinomax,'Destino'));
 $vuelosvisita=$ciudadmaximo[0];
-echo "el destino con mas conexiones es: ".$vuelosvisita;
+echo "el destino con mas conexiones es: ".$vuelosvisita."<br>";
+//calcular el minimo
+asort($destinomax);
+    $ciudadminimo=(array_column($destinomax,'Destino'));
+    $vuelosvisita=$ciudadminimo[0];
+    echo "el destino con menos conexiones es: ".$vuelosvisita;
 }
 ?>
