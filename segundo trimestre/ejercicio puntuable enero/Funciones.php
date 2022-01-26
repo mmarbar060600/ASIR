@@ -2,6 +2,7 @@
 //recoger datos del otro php
 include 'datosvuelos.php';
 //creacion de funciones
+//m1
 function mediapasa($vuelopasa,$operando1)
 {
 $contador=0;
@@ -17,6 +18,7 @@ foreach($vuelopasa as $key => $valor){
 $media=$contador/$contadormedia;
 echo "La media es: ".$media;
 };
+//m2
 function vuelosdestis($vuelodesti,$operando1)
 {
 foreach($vuelodesti as $key => $valor){
@@ -27,6 +29,7 @@ foreach($vuelodesti as $key => $valor){
     }
     }
 }
+//m3
 function fabricante($avifabri,$operando1)
 {
     foreach($avifabri as $key => $valor){
@@ -37,6 +40,7 @@ function fabricante($avifabri,$operando1)
         }
         }
 }
+//m4
 function sumatotal($vuedura,$operando1)
 {
 $contador=0;
