@@ -7,7 +7,12 @@ switch ($entrada) {
     case 'e1':
         mediavuelo($vuedura);
         break;
-    
+    case 'e2':
+        totalpasa($vuelopasa);
+        break;
+        case 'e3':
+            fabriavi($avifabri);
+            break;
     default:
         echo "dato mal introducido";
         break;

@@ -65,4 +65,30 @@ $e2=0;
     }
     $e2=$e1/$e2;
     echo "media horas de todos los vuelos: ".$e2."<br>";
+}
+//e2
+function totalpasa($vuelopasa){
+$pasajerostotal=0;
+    foreach($vuelopasa as $keypasa){
+        $pasa=$keypasa['Pasajeros'];
+        $pasajerostotal=$pasa+$pasajerostotal;
+    }
+    echo "el total de pasajeros de todos los vuelos es: ".$pasajerostotal;
+}
+function fabriavi($avifabri){
+$contadorfabri=0;
+$contadorfabri2=0;
+foreach($avifabri as $keyfabri){
+    $fabricante=$keyfabri['Fabricante'];
+    $vuelo=$keyfabri['vuelo'];
+    if ($fabricante == 'Boeing') {
+        $contadorfabri++;
+    }
+    else {
+        $contadorfabri2++;
+    }
+}
+echo "Boeing ha fabricado: ".$contadorfabri."<br>";
+echo "Airbus ha fabricado: ".$contadorfabri2."<br>";
+}
 ?>
