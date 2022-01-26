@@ -54,4 +54,15 @@ $contador=0;
         }
         echo "Minutos totales del vuelo: ". $contador."<br>";
 }
+//e1
+function mediavuelo($vuedura){
+$e1=0;
+$e2=0;
+    foreach($vuedura as $dura){
+        $tiempo=$dura['Duración-viaje']/60;
+        $e1=$tiempo+$e1;
+        $e2++;
+    }
+    $e2=$e1/$e2;
+    echo "media horas de todos los vuelos: ".$e2."<br>";
 ?>
