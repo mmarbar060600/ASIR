@@ -13,6 +13,9 @@ switch ($entrada) {
         case 'e3':
             fabriavi($avifabri);
             break;
+        case 'e4':
+            destimax($vuelodesti);
+            break;
     default:
         echo "dato mal introducido";
         break;

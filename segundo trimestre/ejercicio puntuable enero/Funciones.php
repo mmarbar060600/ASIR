@@ -91,4 +91,46 @@ foreach($avifabri as $keyfabri){
 echo "Boeing ha fabricado: ".$contadorfabri."<br>";
 echo "Airbus ha fabricado: ".$contadorfabri2."<br>";
 }
+function destimax($vuelodesti){
+$Milan=0;
+$Roma=0;
+$Estambul=0;
+$Madrid=0;
+$Lima=0;
+$Bilbao=0;
+foreach($vuelodesti as $destinos){
+    $destino=$destinos['Destino'];
+    if ($destino == 'Milán') {
+        $Milan++;
+    }
+    elseif ($destino == 'Roma') {
+        $Roma++;
+    }
+    elseif ($destino == 'Estambul') {
+        $Estambul++;
+    }
+    elseif ($destino == 'Madrid') {
+        $Madrid++;
+    }
+    elseif ($destino == 'Lima') {
+        $Lima++;
+    }
+    else {
+        $Bilbao++;
+    }
+
+}
+$destinomax= array(
+    array("Destino" => "Milan","conexiones" => $Milan),
+    array("Destino" => "Roma","conexiones" => $Roma),
+    array("Destino" => "Estambul","conexiones" => $Estambul),
+    array("Destino" => "Madrid","conexiones" => $Madrid),
+    array("Destino" => "Lima","conexiones" => $Lima),
+    array("Destino" => "Bilbao","conexiones" => $Bilbao)
+);
+rsort($destinomax);
+$ciudadmaximo=(array_column($destinomax,'Destino'));
+$vuelosvisita=$ciudadmaximo[0];
+echo "el destino con mas conexiones es: ".$vuelosvisita;
+}
 ?>
