@@ -148,4 +148,68 @@ $vuelodestiunique=array_unique(array_column($vuelodesti,'Destino'));
 $vuelofinish=array_intersect_key($vuelodesti,$vuelodestiunique);
 echo "Ciudades visitadas: ".count($vuelofinish);
 }
+//c2
+//para este lo que voy a hacer es pedirle un parametro por pantalla al usuario desde el html
+function ciudadvisita($vuelodesti,$operando2){
+    $ciudad=$operando2;
+    $contador=0;
+    foreach($vuelodesti as $destino){
+        $destinos=$destino['Destino'];
+        if ($destinos == $operando2) {
+            $contador++;
+        }
+       
+    }
+    echo "La ciudad: ".$operando2." Ha sido visitada: ".$contador." veces";
+}
+//c3
+function visitamax($vuelodesti){
+    $Milan=0;
+$Roma=0;
+$Estambul=0;
+$Madrid=0;
+$Lima=0;
+$Bilbao=0;
+foreach($vuelodesti as $destinos){
+    $destino=$destinos['Destino'];
+    if ($destino == 'Milán') {
+        $Milan++;
+    }
+    elseif ($destino == 'Roma') {
+        $Roma++;
+    }
+    elseif ($destino == 'Estambul') {
+        $Estambul++;
+    }
+    elseif ($destino == 'Madrid') {
+        $Madrid++;
+    }
+    elseif ($destino == 'Lima') {
+        $Lima++;
+    }
+    else {
+        $Bilbao++;
+    }
+
+}
+//creo un array para dividir los datos
+$destinomax= array(
+    array("Destino" => "Milan","conexiones" => $Milan),
+    array("Destino" => "Roma","conexiones" => $Roma),
+    array("Destino" => "Estambul","conexiones" => $Estambul),
+    array("Destino" => "Madrid","conexiones" => $Madrid),
+    array("Destino" => "Lima","conexiones" => $Lima),
+    array("Destino" => "Bilbao","conexiones" => $Bilbao)
+);
+//calcular el maximo
+rsort($destinomax);
+$ciudadmaximo=(array_column($destinomax,'Destino'));
+$vuelosvisita=$ciudadmaximo[0];
+echo "el destino con mas visitas es: ".$vuelosvisita."<br>";
+//calcular el minimo
+asort($destinomax);
+    $ciudadminimo=(array_column($destinomax,'Destino'));
+    $vuelosvisita=$ciudadminimo[0];
+    echo "el destino con menos visitas es: ".$vuelosvisita;
+}
 ?>
