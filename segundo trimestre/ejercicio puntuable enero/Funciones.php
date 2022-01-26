@@ -212,4 +212,9 @@ asort($destinomax);
     $vuelosvisita=$ciudadminimo[0];
     echo "el destino con menos visitas es: ".$vuelosvisita;
 }
+function pruebahtml($entrada2){
+    if ($entrada2 == '1') {
+        echo "aro";
+    }
+}
 ?>
