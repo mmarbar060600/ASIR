@@ -75,6 +75,7 @@ $pasajerostotal=0;
     }
     echo "el total de pasajeros de todos los vuelos es: ".$pasajerostotal;
 }
+//e3
 function fabriavi($avifabri){
 $contadorfabri=0;
 $contadorfabri2=0;
@@ -91,6 +92,7 @@ foreach($avifabri as $keyfabri){
 echo "Boeing ha fabricado: ".$contadorfabri."<br>";
 echo "Airbus ha fabricado: ".$contadorfabri2."<br>";
 }
+//e4
 function destimax($vuelodesti){
 $Milan=0;
 $Roma=0;
@@ -120,6 +122,7 @@ foreach($vuelodesti as $destinos){
     }
 
 }
+//creo un array para dividir los datos
 $destinomax= array(
     array("Destino" => "Milan","conexiones" => $Milan),
     array("Destino" => "Roma","conexiones" => $Roma),
@@ -138,5 +141,11 @@ asort($destinomax);
     $ciudadminimo=(array_column($destinomax,'Destino'));
     $vuelosvisita=$ciudadminimo[0];
     echo "el destino con menos conexiones es: ".$vuelosvisita;
+}
+//c1
+function totalciudades($vuelodesti){
+$vuelodestiunique=array_unique(array_column($vuelodesti,'Destino'));
+$vuelofinish=array_intersect_key($vuelodesti,$vuelodestiunique);
+echo "Ciudades visitadas: ".count($vuelofinish);
 }
 ?>
