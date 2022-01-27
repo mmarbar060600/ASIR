@@ -151,12 +151,40 @@ echo "Ciudades visitadas: ".count($vuelofinish);
 //c2
 //para este lo que voy a hacer es pedirle un parametro por pantalla al usuario desde el html
 function ciudadvisita($vuelodesti){
-    $contador=0;
-    foreach($vuelodesti as $destino){
-        $destinos=$destino['Destino'];
-            $contador++;
-            echo "La ciudad: ".$destinos." es:".$contador."<br>";
+    $Milan=0;
+    $Roma=0;
+    $Estambul=0;
+    $Madrid=0;
+    $Lima=0;
+    $Bilbao=0;
+    foreach($vuelodesti as $destinos){
+        $destino=$destinos['Destino'];
+        if ($destino == 'Milán') {
+            $Milan++;
         }
+        elseif ($destino == 'Roma') {
+            $Roma++;
+        }
+        elseif ($destino == 'Estambul') {
+            $Estambul++;
+        }
+        elseif ($destino == 'Madrid') {
+            $Madrid++;
+        }
+        elseif ($destino == 'Lima') {
+            $Lima++;
+        }
+        elseif ($destino == 'Bilbao'){
+            $Bilbao++;
+        }
+
+    }
+    echo "Las veces que se ha ido a Roma es/son: ".$Roma."<br>";
+    echo "Las veces que se ha ido a Milan es/son: ".$Milan."<br>";
+    echo "Las veces que se ha ido a Estambul es/son: ".$Estambul."<br>";
+    echo "Las veces que se ha ido a Madrid es/son: ".$Madrid."<br>";
+    echo "Las veces que se ha ido a Lima es/son: ".$Lima."<br>";
+    echo "Las veces que se ha ido a Bilbao es/son: ".$Bilbao."<br>";
 }
 //c3
 function visitamax($vuelodesti){
@@ -186,7 +214,6 @@ foreach($vuelodesti as $destinos){
     else {
         $Bilbao++;
     }
-
 }
 //creo un array para dividir los datos
 $destinomax= array(
