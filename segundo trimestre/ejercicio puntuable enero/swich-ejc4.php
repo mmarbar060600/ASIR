@@ -7,6 +7,9 @@ include ("Funciones.php");
         case 'es1':
             avionvisita($vuelodesti,$operando4);
             break;
+        case 'es2':
+            vuefabri($avifabri,$operando4);
+            break;
         
         default:
         echo "aro";

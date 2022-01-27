@@ -220,5 +220,14 @@ function avionvisita($vuelodesti,$operando4){
         echo "los  destinos del vuelo : ".$vuelos." Es: ". $destino."<br>";
         }
         }
+    }
+function vuefabri($avifabri,$operando4){
+    foreach($avifabri as $key => $valor){
+        $vuelos=$valor['vuelo'];
+        $fabricante=$valor['Fabricante'];
+        if ($vuelos == $operando4){
+            echo "El fabricante del vuelo: ".$vuelos." es: ".$fabricante;
+        }
+    }
 }
 ?>
