@@ -150,17 +150,13 @@ echo "Ciudades visitadas: ".count($vuelofinish);
 }
 //c2
 //para este lo que voy a hacer es pedirle un parametro por pantalla al usuario desde el html
-function ciudadvisita($vuelodesti,$operando2){
-    $ciudad=$operando2;
+function ciudadvisita($vuelodesti){
     $contador=0;
     foreach($vuelodesti as $destino){
         $destinos=$destino['Destino'];
-        if ($destinos == $operando2) {
             $contador++;
+            echo "La ciudad: ".$destinos." es:".$contador."<br>";
         }
-       
-    }
-    echo "La ciudad: ".$operando2." Ha sido visitada: ".$contador." veces";
 }
 //c3
 function visitamax($vuelodesti){

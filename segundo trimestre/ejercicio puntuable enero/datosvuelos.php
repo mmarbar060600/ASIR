@@ -22,7 +22,7 @@ include_once 'Funciones.php';
         array("vuelo"=>"Vueling-ZK87","Fabricante"=>"Airbus"),
         array("vuelo"=>"Volotea-UA21","Fabricante"=>"Boeing"),
         array("vuelo"=>"Iberia-WH44","Fabricante"=>"Boeing"),
-        array("vuelo"=>"Ryanair-EL00","Fabricante"=>"Boeing"),
+        array("vuelo"=>"Ryanair-EL00","Fabricante"=>"Airbus"),
         
     );
     $vuedura= array(
