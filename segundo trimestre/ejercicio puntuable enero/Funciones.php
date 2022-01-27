@@ -230,6 +230,17 @@ function vuefabri($avifabri,$operando4){
         }
     }
 }
+function minutostotales($vuedura,$operando4){
+    $total=0;
+    foreach($vuedura as $valor){
+        $vuelos=$valor['vuelo'];
+        $tiempo=$valor['Duración-viaje'];
+        if ($vuelos == $operando4) {
+            $total=$tiempo+$total;
+        }
+    }
+    echo "Tiempo total del vuelo: ".$operando4." es: ".$total;
+}
 function mediahoras($vuedura,$operando4)
 {
 $contador=0;

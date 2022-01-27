@@ -10,6 +10,9 @@ include ("Funciones.php");
         case 'es2':
             vuefabri($avifabri,$operando4);
             break;
+        case 'es3':
+            minutostotales($vuedura,$operando4);
+            break;
         case 'es4':
             mediahoras($vuedura,$operando4);
             break;
