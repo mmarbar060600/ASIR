@@ -230,4 +230,20 @@ function vuefabri($avifabri,$operando4){
         }
     }
 }
+function mediahoras($vuedura,$operando4)
+{
+$contador=0;
+$contadormedia=0;
+foreach($vuedura as $key => $valor){
+    $vuelos=$valor['vuelo'];
+    $tiempo=$valor['Duración-viaje']/60;
+    if ($vuelos == $operando4) {
+        $contador=$tiempo+$contador;
+        $contadormedia++;
+        
+    }
+}
+$media=$contador/$contadormedia;
+echo "La media de horas del vuelo: ".$operando4." es: ".$media;
+};
 ?>

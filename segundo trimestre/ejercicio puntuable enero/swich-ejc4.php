@@ -10,7 +10,9 @@ include ("Funciones.php");
         case 'es2':
             vuefabri($avifabri,$operando4);
             break;
-        
+        case 'es3':
+            mediahoras($vuedura,$operando4);
+            break;
         default:
         echo "aro";
             break;
