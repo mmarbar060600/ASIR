@@ -16,6 +16,9 @@ include ("Funciones.php");
         case 'es4':
             mediahoras($vuedura,$operando4);
             break;
+        case 'es5':
+            mediapasajeros($vuelopasa,$operando4);
+            break;
         default:
         echo "aro";
             break;

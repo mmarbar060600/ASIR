@@ -257,4 +257,18 @@ foreach($vuedura as $key => $valor){
 $media=$contador/$contadormedia;
 echo "La media de horas del vuelo: ".$operando4." es: ".$media;
 };
+function mediapasajeros($vuelopasa,$operando4){
+    $contador=0;
+$contadormedia=0;
+foreach($vuelopasa as $key => $valor){
+    $vuelos=$valor['vuelo'];
+    $pasajeros=$valor['Pasajeros'];
+    if ($vuelos == $operando4) {
+        $contador=$pasajeros+$contador;
+        $contadormedia++;
+    }
+}
+$media=$contador/$contadormedia;
+echo "La media del vuelo: ".$operando4." es: ".$media;
+}
 ?>
