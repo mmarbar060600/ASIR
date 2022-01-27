@@ -1,0 +1,14 @@
+fieldset{
+    background-color: aquamarine;
+}
+
+div{
+    margin-left: 500px;
+    margin-right: 200px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    padding-right: 500px;
+}
+body{
+    background-color: rgb(14, 59, 73);
+}
