@@ -20,7 +20,10 @@ include ("Funciones.php");
             mediapasajeros($vuelopasa,$operando4);
             break;
         default:
-        echo "aro";
+        case 'es6':
+            pasajerostotales($vuelopasa,$operando4);
+            break;
+        echo "opcion no valida";
             break;
     }
 ?>
