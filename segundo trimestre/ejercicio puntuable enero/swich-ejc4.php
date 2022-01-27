@@ -1,6 +1,7 @@
 <?php
 //entrada
-$operando2 = $_POST["operando4"];
+$operando4 = $_POST["operando4"];
+$entrada=$_POST["mvuelo"];
 include ("Funciones.php");
     switch ($entrada) {
         case 'es1':

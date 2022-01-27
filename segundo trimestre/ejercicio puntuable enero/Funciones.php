@@ -217,7 +217,7 @@ function avionvisita($vuelodesti,$operando4){
         $vuelos=$valor['vuelo'];
         $destino=$valor['Destino'];
         if ($vuelos == $operando4){
-        echo "Ultimos destinos: ". $destino."<br>";
+        echo "los  destinos del vuelo : ".$vuelos." Es: ". $destino."<br>";
         }
         }
 }
