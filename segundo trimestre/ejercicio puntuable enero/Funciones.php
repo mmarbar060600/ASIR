@@ -2,7 +2,8 @@
 //recoger datos del otro php
 include 'datosvuelos.php';
 //creacion de funciones
-//m1
+
+//funcion media de pasajeros
 function mediapasa($vuelopasa,$operando1)
 {
 $contador=0;
@@ -18,7 +19,7 @@ foreach($vuelopasa as $key => $valor){
 $media=$contador/$contadormedia;
 echo "La media es: ".$media;
 };
-//m2
+//Funcion ultimos destinos
 function vuelosdestis($vuelodesti,$operando1)
 {
 foreach($vuelodesti as $key => $valor){
@@ -29,7 +30,7 @@ foreach($vuelodesti as $key => $valor){
     }
     }
 }
-//m3
+// funcion fabricante
 function fabricante($avifabri,$operando1)
 {
     foreach($avifabri as $key => $valor){
@@ -40,7 +41,7 @@ function fabricante($avifabri,$operando1)
         }
         }
 }
-//m4
+//funcion minutos totales de vuelo
 function sumatotal($vuedura,$operando1)
 {
 $contador=0;
@@ -54,7 +55,9 @@ $contador=0;
         }
         echo "Minutos totales del vuelo: ". $contador."<br>";
 }
-//e1
+//FUNCIONES EJC 2
+ 
+//funcion media de horas voladas de todos los vuelos
 function mediavuelo($vuedura){
 $e1=0;
 $e2=0;
@@ -66,7 +69,7 @@ $e2=0;
     $e2=$e1/$e2;
     echo "media horas de todos los vuelos: ".$e2."<br>";
 }
-//e2
+//funcion de numero total de pasajeros de todos los vuelos
 function totalpasa($vuelopasa){
 $pasajerostotal=0;
     foreach($vuelopasa as $keypasa){
@@ -75,7 +78,7 @@ $pasajerostotal=0;
     }
     echo "el total de pasajeros de todos los vuelos es: ".$pasajerostotal;
 }
-//e3
+//Funcion de numero de aviones por fabricante
 function fabriavi($avifabri){
 $contadorfabri=0;
 $contadorfabri2=0;
@@ -92,7 +95,7 @@ foreach($avifabri as $keyfabri){
 echo "Boeing ha fabricado: ".$contadorfabri."<br>";
 echo "Airbus ha fabricado: ".$contadorfabri2."<br>";
 }
-//e4
+//Funcion de destinos con mas conexiones y menos
 function destimax($vuelodesti){
 $Milan=0;
 $Roma=0;
@@ -122,6 +125,9 @@ foreach($vuelodesti as $destinos){
     }
 
 }
+
+//FUNCIONES EJERCICIO 3
+//Funcion Cual es la ciudad mas visitada y la menos visitada
 //creo un array para dividir los datos
 $destinomax= array(
     array("Destino" => "Milan","conexiones" => $Milan),
@@ -142,14 +148,14 @@ asort($destinomax);
     $vuelosvisita=$ciudadminimo[0];
     echo "el destino con menos conexiones es: ".$vuelosvisita;
 }
-//c1
+////FUNCION de numero total de ciudades visitadas
 function totalciudades($vuelodesti){
+//Uso el array unique y columm para borrar los datos duplicados del array
 $vuelodestiunique=array_unique(array_column($vuelodesti,'Destino'));
 $vuelofinish=array_intersect_key($vuelodesti,$vuelodestiunique);
 echo "Ciudades visitadas: ".count($vuelofinish);
 }
-//c2
-//para este lo que voy a hacer es pedirle un parametro por pantalla al usuario desde el html
+//Funcion de veces que se ha ido a una ciudad
 function ciudadvisita($vuelodesti){
     $Milan=0;
     $Roma=0;
@@ -186,7 +192,7 @@ function ciudadvisita($vuelodesti){
     echo "Las veces que se ha ido a Lima es/son: ".$Lima."<br>";
     echo "Las veces que se ha ido a Bilbao es/son: ".$Bilbao."<br>";
 }
-//c3
+//Funcion de ciudad mas visitada y menos visitada
 function visitamax($vuelodesti){
     $Milan=0;
 $Roma=0;
@@ -235,6 +241,10 @@ asort($destinomax);
     $vuelosvisita=$ciudadminimo[0];
     echo "el destino con menos visitas es: ".$vuelosvisita;
 }
+
+//FUNCIONES EJERCICIO 4
+
+//Funcion destinos del avion
 function avionvisita($vuelodesti,$operando4){
     foreach($vuelodesti as $key => $valor){
         $vuelos=$valor['vuelo'];
@@ -244,6 +254,7 @@ function avionvisita($vuelodesti,$operando4){
         }
         }
     }
+//Funcion fabricante del avion
 function vuefabri($avifabri,$operando4){
     foreach($avifabri as $key => $valor){
         $vuelos=$valor['vuelo'];
@@ -253,6 +264,7 @@ function vuefabri($avifabri,$operando4){
         }
     }
 }
+//Funcion minutos totales de vuelo
 function minutostotales($vuedura,$operando4){
     $total=0;
     foreach($vuedura as $valor){
@@ -264,6 +276,7 @@ function minutostotales($vuedura,$operando4){
     }
     echo "Tiempo total del vuelo: ".$operando4." es: ".$total;
 }
+//Funcion media de horas voladas
 function mediahoras($vuedura,$operando4)
 {
 $contador=0;
@@ -280,6 +293,7 @@ foreach($vuedura as $key => $valor){
 $media=$contador/$contadormedia;
 echo "La media de horas del vuelo: ".$operando4." es: ".$media;
 };
+//Funcion media de pasajeros
 function mediapasajeros($vuelopasa,$operando4){
     $contador=0;
 $contadormedia=0;
@@ -294,6 +308,7 @@ foreach($vuelopasa as $key => $valor){
 $media=$contador/$contadormedia;
 echo "La media del vuelo: ".$operando4." es: ".$media;
 }
+//Funcion pasajeros totales del vuelo
 function pasajerostotales($vuelopasa,$operando4){
     $pasajerostotal=0;
     foreach($vuelopasa as $vuepasa){
