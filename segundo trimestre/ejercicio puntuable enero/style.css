@@ -1,14 +1,16 @@
 fieldset{
-    background-color: aquamarine;
+    background-color: black;
 }
 
 div{
-    margin-left: 500px;
-    margin-right: 200px;
-    margin-top: 200px;
+    margin-left: 10px;
+    margin-right: 800px;
     margin-bottom: 200px;
-    padding-right: 500px;
+    padding-right: 400px;
 }
 body{
-    background-color: rgb(14, 59, 73);
+    background-color: #4FAAA1;
+}
+legend{
+    color: white;
 }
