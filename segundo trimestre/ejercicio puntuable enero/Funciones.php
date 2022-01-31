@@ -328,4 +328,19 @@ function pasajerostotales($vuelopasa,$operando4){
     }
     echo "el total de pasajeros del vuelo: ".$operando4." es: ".$pasajerostotal;
 }
+//Defensa ejercicio de media de combustible de un avion en concreto
+function combusmedia($vuelocombus,$operando4){
+    $contador=0;
+    $contadormedia=0;
+    foreach($vuelocombus as $dato){
+        $vuelos=$dato['vuelo'];
+        $combustible=$dato['Combustible'];
+        if ($vuelos == $operando4){
+            $contador=$combustible+$contador;
+            $contadormedia++;
+        }
+    }
+    $media=$contador/$contadormedia;
+    echo "La media de combustible gastado del vuelo: ".$operando4." Es igual a: ".$media." Litros";
+}
 ?>

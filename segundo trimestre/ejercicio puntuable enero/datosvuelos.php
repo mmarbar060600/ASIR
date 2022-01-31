@@ -55,4 +55,16 @@ include_once 'Funciones.php';
         array("vuelo"=>"Ryanair-EW44","Pasajeros"=>"77"),
         array("vuelo"=>"Vueling-ZK87","Pasajeros"=>"82")
     );
+$vuelocombus= array(
+    array("vuelo"=>"Vueling-AE12","Combustible"=>"390"),
+    array("vuelo"=>"Volotea-EA21","Combustible"=>"421"),
+    array("vuelo"=>"Iberia-WE44","Combustible"=>"389"),
+    array("vuelo"=>"Ryanair-EW44","Combustible"=>"387"),
+    array("vuelo"=>"Vueling-ZK87","Combustible"=>"413"),
+    array("vuelo"=>"Volotea-UA21","Combustible"=>"379"),
+    array("vuelo"=>"Iberia-WH44","Combustible"=>"388"),
+    array("vuelo"=>"Ryanair-EL00","Combustible"=>"410"),
+    array("vuelo"=>"Vueling-AE12","Combustible"=>"399"),
+    array("vuelo"=>"Volotea-EA21","Combustible"=>"404")
+);
 ?>

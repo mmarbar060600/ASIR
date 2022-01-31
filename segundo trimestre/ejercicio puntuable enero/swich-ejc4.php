@@ -19,10 +19,13 @@ include ("Funciones.php");
         case 'es5':
             mediapasajeros($vuelopasa,$operando4);
             break;
-        default:
         case 'es6':
             pasajerostotales($vuelopasa,$operando4);
             break;
+        case 'es7':
+            combusmedia($vuelocombus,$operando4);
+            break;
+        default:
         echo "opcion no valida";
             break;
     }
