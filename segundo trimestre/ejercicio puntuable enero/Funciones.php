@@ -277,12 +277,12 @@ function minutostotales($vuedura,$operando4){
     $total=0;
     foreach($vuedura as $valor){
         $vuelos=$valor['vuelo'];
-        $tiempo=$valor['Duración-viaje'];
+        $tiempo=$valor['Duración-viaje']/60;
         if ($vuelos == $operando4) {
             $total=$tiempo+$total;
         }
     }
-    echo "Tiempo total del vuelo: ".$operando4." es: ".$total;
+    echo "Tiempo total en horas del vuelo: ".$operando4." es: ".$total;
 }
 //Funcion media de horas voladas
 function mediahoras($vuedura,$operando4)
