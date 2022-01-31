@@ -234,13 +234,21 @@ $destinomax= array(
 rsort($destinomax);
 $ciudadmaximo=(array_column($destinomax,'Destino'));
 $vuelosvisita=$ciudadmaximo[0];
-echo "el destino con mas visitas es: ".$vuelosvisita."<br>";
+$vuelosvisita1=$ciudadmaximo[1];
+$vuelosvisita2=$ciudadmaximo[2];
+echo "La primera ciudad mas visitada es: ".$vuelosvisita."<br>";
+echo "La segunda ciudad mas visitada es: ".$vuelosvisita1."<br>";
+echo "La tercera ciudad mas visitada es: ".$vuelosvisita2."<br>";
+/*
+//Te lo comento por que me da pena borrarlo
 //calcular el minimo
 asort($destinomax);
     $ciudadminimo=(array_column($destinomax,'Destino'));
     $vuelosvisita=$ciudadminimo[0];
     echo "el destino con menos visitas es: ".$vuelosvisita;
+*/
 }
+
 
 //FUNCIONES EJERCICIO 4
 
